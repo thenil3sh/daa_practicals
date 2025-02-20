@@ -37,6 +37,7 @@ void quick_sort(vector<T>& vec, unsigned int left, unsigned int right) {
     unsigned int piv = pivot(vec, left, right);
     quick_sort(vec, left, piv);
     quick_sort(vec, piv + 1, right);
+    cout << vec;
 }
 
 int main() {
